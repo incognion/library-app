@@ -1,0 +1,62 @@
+.fab-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.fab {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+  background-color: #0056b3;
+}
+
+.whatsapp-fab {
+  background-color: #25d366;
+}
+
+.whatsapp-fab:hover {
+  background-color: #1ebd59;
+}
+
+.call-fab {
+  background-color: #28a745;
+}
+
+.call-fab:hover {
+  background-color: #218838;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .fab-container {
+    bottom: 32px;
+    right: 18px;
+    gap: 12px; 
+  }
+
+  .fab {
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+  }
+}

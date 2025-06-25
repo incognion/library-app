@@ -1,0 +1,110 @@
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+}
+
+.headDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.5));
+}
+
+.menuIcon {
+  display: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.menuIcon:hover {
+  transform: scale(1.1);
+}
+
+.listDiv {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.listDiv a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.listDiv a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #00e6e6;
+  transition: width 0.3s ease;
+}
+
+.listDiv a:hover {
+  color: #00e6e6;
+}
+
+.listDiv a:hover::after {
+  width: 100%;
+}
+
+.listDiv a.active {
+  color: #00e6e6;
+}
+
+@media (max-width: 768px) {
+  .listDiv {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    flex-direction: column;
+    background: linear-gradient(145deg, #16222a, #3a6073);
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    animation: fadeSlideIn 0.3s ease-out;
+  }
+
+  .listDiv.open {
+    display: flex;
+  }
+
+  .listDiv a {
+    font-size: 1.1rem;
+    padding: 10px 0;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

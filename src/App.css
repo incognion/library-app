@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(to right, #eef2f7, #ffffff);
+  color: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.aboutDiv, .contactDiv, .testimonialDiv, .pricingDiv, .footerDiv {
+  /* padding: 20px; */
+  align-items: center;
+  text-align: center;
+  /* background: linear-gradient(to right, #eef2f7, #ffffff); */
+}
+
+section {
+  scroll-margin-top: 70px;
+}

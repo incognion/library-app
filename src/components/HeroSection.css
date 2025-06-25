@@ -1,0 +1,116 @@
+/* Hero Section Styles */
+.hero-section {
+  height: 100vh;
+  background-color: #f0f4f8; /* Fallback color while background loads */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s ease-in;
+  overflow: hidden;
+}
+
+.hero-section.bg-loaded {
+  background: url('/images/lib.webp') no-repeat center center/cover;
+}
+
+@media (max-width: 768px) {
+  .hero-section.bg-loaded {
+    background: url('/images/lib0.webp') no-repeat center center/cover;
+  }
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  color: #fff;
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero-tagline {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.typing-wrapper {
+  font-size: 1.5rem;
+  font-weight: 500;
+  min-height: 36px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typing-effect {
+  color: #00d4ff;
+  letter-spacing: 1px;
+}
+
+.typing-cursor {
+  color: #00d4ff;
+  animation: blink 1s infinite;
+  margin-left: 3px;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.btn-explore {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  z-index: 2;
+  margin-top: 144px;
+}
+
+.btn-explore:hover {
+  background: linear-gradient(135deg, #16222a, #3a6073);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    margin-top: -144px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+}
