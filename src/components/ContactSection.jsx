@@ -35,13 +35,13 @@ export default function ContactSection() {
           </div>
           <div className="contact-item">
             <FaEnvelope className="icon" />
-            <a href="mailto:study.library@email.com">study.library@gmail.com</a>
+            <a href="mailto:adityastudyzone2025@gmail.com">adityastudyzone2025@gmail.com</a>
           </div>
           <div className="contact-item">
             <FaPhoneAlt className="icon" />
             <div className="contact-phones">
               <a href="tel:+918299628009">+91 82996 28009</a>
-              {/* <a href="tel:+918400445595">+91 84004 45595</a> */}
+              <a href="tel:+919026924092">+91 90269 24092</a>
             </div>
           </div>
         </div>

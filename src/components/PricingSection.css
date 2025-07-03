@@ -61,6 +61,15 @@
   position: relative;
 }
 
+.slot-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #203a43;
+  margin: 8px 0 4px;
+  position: relative;
+  z-index: 1;
+}
+
 .slot-time {
   font-size: 1.15rem;
   font-weight: 700;
@@ -103,12 +112,35 @@
   z-index: 1;
   position: relative;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
 }
 
 .book-btn:hover {
   background: linear-gradient(135deg, #16222a, #3a6073);
   /* box-shadow: 0 10px 24px rgba(0, 123, 255, 0.3); */
   transform: translateY(-2px);
+}
+
+/* Tagline just under each title */
+.tagline {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #555;
+  margin: 2px 0 10px;
+}
+
+/* Highlight the special Free-Trial card */
+.special-card {
+  border: 2px dashed #ff8c00;
+  transform: rotate(-1deg);
+}
+
+.special-card .price {
+  color: #ff8c00;
+}
+
+.special-card .book-btn {
+  background: linear-gradient(135deg, #ff8c00, #ffa500);
 }
 
 /* Responsive Design */
