@@ -1,92 +1,97 @@
 .faq-section {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.faq-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  /* Soft shadow for depth */
+  transition: color 0.3s ease;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #ffffff;
+  /* Clean white background for each item */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  /* Glamorous shadow effect */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  /* Hover effect for item elevation */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  /* Stronger shadow on hover */
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: #f4f4f4;
+  /* Soft light background for question header */
+  color: #333;
+  /* font-size: 1rem; */
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-icon.active {
+  transform: rotate(45deg);
+  /* Rotate the plus icon when active */
+}
+
+.faq-question:hover {
+  background: #e6e6e6;
+  /* Slight darkening on hover */
+}
+
+.faq-answer {
+  padding: 20px 30px;
+  background-color: #fafafa;
+  /* Slightly lighter background for the answer */
+  color: #555;
+  /* font-size: 1rem; */
+  line-height: 1.6;
+  transition: background 0.3s ease;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.faq-answer:hover {
+  background-color: #f0f0f0;
+  /* Lighter shade on hover */
+}
+
+@media (max-width: 768px) {
   .faq-heading {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    transition: color 0.3s ease;
+    font-size: 1.8rem;
   }
-  
-  .faq-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .faq-item {
-    background: #ffffff; /* Clean white background for each item */
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Glamorous shadow effect */
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .faq-item:hover {
-    transform: translateY(-5px); /* Hover effect for item elevation */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-  }
-  
   .faq-question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-    background: #f4f4f4; /* Soft light background for question header */
-    color: #333;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    transition: background 0.3s ease;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    font-size: 0.90rem;
+    padding: 15px;
   }
-  
-  .faq-icon {
-    font-size: 1.5rem;
-    transition: transform 0.3s ease;
-  }
-  
-  .faq-icon.active {
-    transform: rotate(45deg); /* Rotate the plus icon when active */
-  }
-  
-  .faq-question:hover {
-    background: #e6e6e6; /* Slight darkening on hover */
-  }
-  
-  .faq-answer {
-    padding: 20px 30px;
-    background-color: #fafafa; /* Slightly lighter background for the answer */
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.6;
-    transition: background 0.3s ease;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
-  
-  .faq-answer:hover {
-    background-color: #f0f0f0; /* Lighter shade on hover */
-  }
-  
-  @media (max-width: 768px) {
-    .faq-heading {
-      font-size: 1.8rem;
-    }
-  
-    .faq-question {
-      font-size: 1rem;
-    }
-  
-    .faq-answer {
-      font-size: 0.95rem;
-    }
-  }
-  
+}

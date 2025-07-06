@@ -40,8 +40,8 @@ export default function ContactSection() {
           <div className="contact-item">
             <FaPhoneAlt className="icon" />
             <div className="contact-phones">
-              <a href="tel:+918299628009">+91 82996 28009</a>
               <a href="tel:+919026924092">+91 90269 24092</a>
+              <a href="tel:+918299628009">+91 82996 28009</a>
             </div>
           </div>
         </div>

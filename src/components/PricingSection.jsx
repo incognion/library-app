@@ -75,7 +75,7 @@ export default function PricingSection() {
   };
 
   return (
-    <section className="pricing-container">
+    <div className="pricing-container">
       <h2 className="pricing-heading">Choose Your Plan</h2>
 
       {/* Paid plans */}
@@ -89,7 +89,7 @@ export default function PricingSection() {
       <div className="pricing-grid" style={{ marginTop: "32px" }}>
         <PricingCard plan={freeTrialPlan} buildWA={buildWA} />
       </div>
-    </section>
+    </div>
   );
 }
 

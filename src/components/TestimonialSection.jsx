@@ -30,7 +30,7 @@ export default function TestimonialSection() {
   }, []);
 
   return (
-    <section className="testimonial-section" id="testimonials">
+    <div className="testimonial-section" id="testimonials">
       <h2>What Our Students Say</h2>
       <div className="testimonial-card">
         <p className="feedback">“{testimonials[current].feedback}”</p>
@@ -46,6 +46,6 @@ export default function TestimonialSection() {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }

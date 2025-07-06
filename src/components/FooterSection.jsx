@@ -1,4 +1,5 @@
 import React from "react";
+import { MdFavorite } from "react-icons/md"; 
 import "./FooterSection.css";
 
 function FooterSection() {
@@ -6,14 +7,22 @@ function FooterSection() {
     <footer className="footerDiv">
       <div className="footerContent">
         <h2>Aditya Study Zone</h2>
-        <p>&copy; 2025 Aditya Study Zone. All rights reserved.</p>
-        <p>Follow us on social media:</p>
-        <div className="socialMedia">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
+        <p>
+          Copyright &copy; 2025 Aditya Study Zone
+        </p>
+        <p>
+          Made with{" "}
+          <a
+            href="https://linkedin.com/in/incognion"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View my LinkedIn profile"
+            className="love-link"
+          >
+            <MdFavorite className="heart-icon" />
+          </a>{" "}
+          by Ashutosh
+        </p>
       </div>
     </footer>
   );

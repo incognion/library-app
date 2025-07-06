@@ -1,7 +1,7 @@
 .footerDiv {
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     color: white;
-    padding: 40px 20px 40px;
+    padding: 20px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -22,28 +22,15 @@
     color: #ddd;
   }
   
-  .socialMedia {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 18px;
-    margin-top: 15px;
-  }
-  
-  .footerDiv a {
-    font-weight: 500;
-    color: #00d0ff;
-    text-decoration: none;
-    font-size: 15px;
-  }
-  
-  .footerDiv a:hover {
-    color: #ffffff;
-  }
+  .heart-icon {
+  color: crimson;
+  font-size: 16px;
+  transform: translateY(3px);
+}
   
   @media (max-width: 768px) {
     .footerDiv {
-      padding: 30px 70px 30px;
+      padding: 30px 40px;
     }
   
     .footerDiv h2 {
@@ -54,4 +41,3 @@
       font-size: 14px;
     }
   }
-  
