@@ -1,13 +1,68 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.ico" />
-    <title>Aditya Study Zone</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Aditya Study Zone | Peaceful Place to Focus, Learn & Succeed</title>
+    <meta name="description" content="Aditya Study Zone: 24×7 secure, air-conditioned library with high-speed WiFi, personal desks, and free trial. Book your slot today!" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://adityastudy.in/" />
+
+    <!-- Favicon & Touch Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="color-scheme" content="light dark">
+
+
+    <!-- Custom Font Import -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" />
+
+    <!-- Structured Data (Library) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Library",
+      "name": "Aditya Study Zone",
+      "image": "https://adityastudy.in/images/logo.png",
+      "@id": "https://adityastudy.in/",
+      "url": "https://adityastudy.in/",
+      "telephone": "+919026924092",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Near Hyderabad Choti Gate BHU, Susuwahi",
+        "addressLocality": "Varanasi",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "221011",
+        "addressCountry": "IN"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "priceRange": "₹700–₹1500"
+    }
+    </script>
+
+    <!-- React App Entrypoint -->
+    <script type="module" src="/src/main.jsx"></script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
