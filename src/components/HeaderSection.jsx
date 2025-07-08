@@ -64,6 +64,13 @@ function HeaderSection({
             Testimonials
           </a>
           <a
+            href="#faq"
+            onClick={closeMenu}
+            className={activeSection === "faq" ? "active" : ""}
+          >
+            FAQs
+          </a>
+          <a
             href="#contact"
             onClick={closeMenu}
             className={activeSection === "contact" ? "active" : ""}

@@ -31,11 +31,6 @@ function FAQSection() {
         "We're open 24/7 with flexible shift timings to suit your schedule.",
     },
     {
-      question: "Can I modify my booking?",
-      answer:
-        "Yes, contact us via WhatsApp or phone at least 24 hours before your scheduled time.",
-    },
-    {
       question: "Is the space secure?",
       answer:
         "Absolutely! We have 24/7 CCTV surveillance and secure access controls.",
@@ -48,7 +43,7 @@ function FAQSection() {
   ];
 
   return (
-    <section className="faq-section">
+    <div className="faq-section">
       <h2 className="faq-heading">Frequently Asked Questions</h2>
 
       <div className="faq-container">
@@ -100,7 +95,7 @@ function FAQSection() {
           </a>
         </div>
       </div> */}
-    </section>
+    </div>
   );
 }
 

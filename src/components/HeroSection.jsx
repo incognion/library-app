@@ -10,7 +10,7 @@ function HeroSection() {
   const directionRef = useRef(1);
 
   useEffect(() => {
-    const phrases = ["Peaceful", "Productive", "Perfect Study Spot"];
+    const phrases = ["Pacified", "Productive", "Perfect Study Spot"];
     const interval = setInterval(() => {
       const currentPhrase = phrases[indexRef.current];
       if (directionRef.current === 1) {
@@ -37,29 +37,55 @@ function HeroSection() {
   }, []);
 
   return (
-    <section className={`hero-section ${isBgLoaded ? 'bg-loaded' : ''}`} id="home">
-      {/* Hidden img to preload */}
-      <img
-        src="/images/lib.webp"
-        alt="background"
-        onLoad={() => setIsBgLoaded(true)}
-        style={{ display: 'none' }}
-      />
+    <>
+      {/* React 19 Native Metadata - No library needed! */}
+      <title>Aditya Study Zone | Peaceful Place to Focus, Learn & Succeed</title>
+      <meta name="description" content="Aditya Study Zone: Secure 24×7 library with high-speed WiFi, personal desks, air-conditioned environment. Book your study slot today!" />
+      <meta name="keywords" content="study zone, library, WiFi, personal desk, 24x7, air conditioned, Varanasi, BHU, study space, peaceful, productive" />
+      
+      {/* Open Graph Tags */}
+      <meta property="og:title" content="Aditya Study Zone | Peaceful Place to Focus, Learn & Succeed" />
+      <meta property="og:description" content="Secure 24×7 library with high-speed WiFi, personal desks, air-conditioned environment. Book your peaceful study slot today!" />
+      <meta property="og:image" content="https://adityastudy.in/logo.png" />
+      <meta property="og:url" content="https://adityastudy.in/" />
+      <meta property="og:type" content="website" />
+      
+      {/* Twitter Card Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Aditya Study Zone | Peaceful Place to Focus, Learn & Succeed" />
+      <meta name="twitter:description" content="Secure 24×7 library with high-speed WiFi, personal desks, air-conditioned environment. Book your peaceful study slot today!" />
+      <meta name="twitter:image" content="https://adityastudy.in/logo.png" />
+      
+      {/* Link Tags */}
+      <link rel="canonical" href="https://adityastudy.in/" />
 
-      <div className="hero-overlay">
-        <div className="hero-content">
-          <h1>Aditya Study Zone</h1>
-          <p className="hero-tagline">A Peaceful Place to Focus, Learn & Succeed</p>
-          <div className="typing-wrapper">
-            <span className="typing-effect">{typingText}</span>
-            <span className="typing-cursor">|</span>
+      <section className={`hero-section ${isBgLoaded ? 'bg-loaded' : ''}`} id="home">
+        {/* Hidden img to preload */}
+        <img
+          src="/images/lib.webp"
+          alt="background"
+          onLoad={() => setIsBgLoaded(true)}
+          style={{ display: 'none' }}
+        />
+
+        <div className="hero-overlay">
+          <div className="hero-content">
+            <h1>Aditya Study Zone</h1>
+            
+            <p className="hero-tagline">A Peaceful Place to Focus, Learn & Succeed</p>
+            
+            <div className="typing-wrapper">
+              <span className="typing-effect">{typingText}</span>
+              <span className="typing-cursor">|</span>
+            </div>
+
+            <Link to="facilities" smooth={true} duration={600} className="btn-explore">
+              Explore Facilities
+            </Link>
           </div>
-          <Link to="facilities" smooth={true} duration={600} className="btn-explore">
-            Explore Facilities
-          </Link>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 

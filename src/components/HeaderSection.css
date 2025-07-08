@@ -78,7 +78,7 @@ nav {
     right: 20px;
     flex-direction: column;
     background: linear-gradient(145deg, #16222a, #3a6073);
-    padding: 15px 20px;
+    padding: 15px;
     border-radius: 12px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
     animation: fadeSlideIn 0.3s ease-out;
@@ -90,7 +90,7 @@ nav {
 
   .listDiv a {
     font-size: 1.1rem;
-    padding: 10px 0;
+    padding: 6px 0;
   }
 
   .menuIcon {

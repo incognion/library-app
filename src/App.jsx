@@ -71,22 +71,24 @@ function App() {
       <section className="mainDiv" id="home">
         <HeroSection />
       </section>
-      
 
       <section className="aboutDiv" id="facilities">
         <FacilitiesGrid />
         <ImageSlider />
       </section>
 
-      <section id="pricing">
+      <section className="pricingDiv" id="pricing">
         <PricingSection />
       </section>
-      
+
       <section className="testimonialsDiv" id="testimonials">
         <TestimonialSection />
-        </section>
-        
-      <FAQSection />
+      </section>
+
+      <section className="faqDiv" id="faq">
+        <FAQSection />
+      </section>
+
       <section className="contactDiv" id="contact">
         <ContactSection />
       </section>
